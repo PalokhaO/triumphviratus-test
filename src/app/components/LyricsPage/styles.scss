@@ -1,0 +1,19 @@
+.lyricsPage {
+  &__header {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+      &__results {
+          justify-content: space-around;
+          display: flex;
+          align-items: center;
+
+          div:nth-child(2) {
+              border-left: 1px solid black;
+          }
+          div {
+              padding: 0px 16px;
+          }
+      }
+  }
+}
