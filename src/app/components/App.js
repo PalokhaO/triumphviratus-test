@@ -1,14 +1,15 @@
-import React from 'react';
+import React, { useState } from "react";
+import StartPage from "./StartPage/StartPage.component";
+import "../main.scss";
+import Dashboard from "./Dashboard/Dashboard";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit  and save to reload.
-        </p>
-      </header>
-    </div>
+  const [gameStatus, setGameStatus] = useState(true);
+  const toggleGameStatus = () => setGameStatus(!gameStatus);
+  return gameStatus ? (
+    <Dashboard />
+  ) : (
+    <StartPage toggleGameStatus={toggleGameStatus} />
   );
 }
 
