@@ -24,11 +24,13 @@ class Dashboard extends PureComponent {
     this.setState(prevState => ({ tries: prevState.tries - 1 }));
 
 
+
   render() {
     const {
       resultsCount: { machineAns, humanAns },
       tries
     } = this.state;
+    const {toggleGameStatus} = this.props;
     return (
       <main>
         <header>
@@ -46,7 +48,7 @@ class Dashboard extends PureComponent {
         {tries === 0 ? (
           <ResultsPage />
         ) : (
-          <LyricsPage/>
+          <LyricsPage toggleGameStatus={toggleGameStatus}/>
         )}
       </main>
     );

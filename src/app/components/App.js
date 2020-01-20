@@ -7,7 +7,7 @@ function App() {
   const [gameStatus, setGameStatus] = useState(true);
   const toggleGameStatus = () => setGameStatus(!gameStatus);
   return gameStatus ? (
-    <Dashboard />
+    <Dashboard toggleGameStatus={toggleGameStatus} />
   ) : (
     <StartPage toggleGameStatus={toggleGameStatus} />
   );

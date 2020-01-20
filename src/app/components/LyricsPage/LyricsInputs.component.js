@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-const LyricsInputsComponent = (submitUserAnswer) => {
+const LyricsInputs = ({submitUserAnswer}) => {
   const [lyrics, setLyrics] = useState("");
   const handleAreaOnChange = ({ target: { value } }) => setLyrics(value);
 
   const handleSubmit = () => {
-    return submitUserAnswer(lyrics)
+    return submitUserAnswer(lyrics,"lyrics")
   };
   return(
     <section>
@@ -30,4 +30,4 @@ const LyricsInputsComponent = (submitUserAnswer) => {
   )
 };
 
-export default LyricsInputsComponent;
+export default LyricsInputs;
