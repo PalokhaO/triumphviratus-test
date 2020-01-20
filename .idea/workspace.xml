@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d223ce9-8305-408d-8424-a1d6f9b46edd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/Dashboard/Dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/LyricsPage/Answers.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/LyricsPage/LyricsInputs.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/LyricsPage/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/LyricsPage/styles.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/ResultsPage/ResultsPage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/components/StartPage/StartPage.component.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/app/main.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Dashboard/Dashboard.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/LyricsPage/Answers.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/LyricsPage/Answers.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/LyricsPage/LyricsInputs.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/LyricsPage/LyricsInputs.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/LyricsPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/LyricsPage/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -31,11 +21,11 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app/components/Dashboard/Dashboard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="325">
-                  <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+                <state relative-caret-position="408">
+                  <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
                   <folding>
                     <element signature="e#0#45#0" expanded="true" />
                   </folding>
@@ -46,17 +36,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/LyricsInputs.component.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret selection-end-column="40" />
+                <state relative-caret-position="119">
+                  <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/Answers.component.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+                <state relative-caret-position="34">
+                  <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
                 </state>
               </provider>
             </entry>
@@ -77,8 +67,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+                <state relative-caret-position="238">
+                  <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
                   <folding>
                     <element signature="e#0#45#0" expanded="true" />
                   </folding>
@@ -98,6 +88,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>LyricsInputsComponent</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>LyricsInputs</replace>
+    </replaceStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -114,10 +112,11 @@
         <option value="$PROJECT_DIR$/src/app/main.css" />
         <option value="$PROJECT_DIR$/src/app/components/LyricsPage/styles.scss" />
         <option value="$PROJECT_DIR$/src/app/components/AnswersPage/AnswersPage.js" />
-        <option value="$PROJECT_DIR$/src/app/components/App.js" />
         <option value="$PROJECT_DIR$/src/app/components/LyricsPage/LyricsPage.component.js" />
         <option value="$PROJECT_DIR$/src/app/components/ResultsPage/ResultsPage.js" />
         <option value="$PROJECT_DIR$/src/app/components/LyricsPage/LyricsInputs.js" />
+        <option value="$PROJECT_DIR$/src/app/components/LyricsPage/LyricsInputs.component.js" />
+        <option value="$PROJECT_DIR$/src/app/components/App.js" />
         <option value="$PROJECT_DIR$/src/app/components/Dashboard/Dashboard.js" />
         <option value="$PROJECT_DIR$/src/app/components/LyricsPage/Answers.component.js" />
         <option value="$PROJECT_DIR$/src/app/components/LyricsPage/index.js" />
@@ -171,8 +170,7 @@
               <item name="triumph-akinator" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="LyricsPage" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -255,24 +253,23 @@
       <option name="presentableId" value="Default" />
       <updated>1579463463151</updated>
       <workItem from="1579463467218" duration="3276000" />
-      <workItem from="1579547488166" duration="8511000" />
+      <workItem from="1579547488166" duration="11207000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11787000" />
+    <option name="totallyTimeSpent" value="14483000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="npm" order="0" side_tool="true" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.15226555" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.15226555" />
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="GraphQL" order="1" weight="0.32974428" />
-      <window_info anchor="bottom" id="Terminal" order="2" visible="true" weight="0.17226435" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="2" visible="true" weight="0.17226435" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.3298731" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
@@ -342,16 +339,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -373,37 +360,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/Dashboard/Dashboard.js">
+    <entry file="file://$PROJECT_DIR$/src/app/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        <state relative-caret-position="153">
+          <caret line="9" column="49" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="49" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/LyricsInputs.component.js">
+    <entry file="file://$PROJECT_DIR$/src/app/services/http.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret selection-end-column="40" />
+          <caret column="28" lean-forward="true" selection-start-column="28" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/index.js">
+    <entry file="file://$PROJECT_DIR$/src/app/services/microphone.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="527">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/Answers.component.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="23" lean-forward="true" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+        <state relative-caret-position="34">
+          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/LyricsInputs.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="42" selection-start-line="7" selection-start-column="42" selection-end-line="7" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/Dashboard/Dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="30" column="11" lean-forward="true" selection-start-line="30" selection-start-column="11" selection-end-line="30" selection-end-column="11" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
