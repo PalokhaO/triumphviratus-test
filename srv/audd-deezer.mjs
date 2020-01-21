@@ -52,6 +52,6 @@ export const recognizeByHum = blob => {
             body,
         })
         .then(res => res.json())
-        .then(body => (body.result.list || []))
+        .then(body => (body.result && body.result.list || []))
         .then(addDeezerInfo);
 };
