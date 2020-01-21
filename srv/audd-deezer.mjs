@@ -22,7 +22,7 @@ function findDeezerSong (item) {
             cover: deezerItem && deezerItem.album && deezerItem.album.cover || null,
         }));
 }
-    
+
 export const recognizeByLyrics = lyrics => fetch(`https://api.audd.io/?method=findLyrics&api_token=${token}&q=${lyrics}`)
     .then(res => res.json())
     .then(body => (body.result || []))

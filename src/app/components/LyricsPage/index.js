@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import "./styles.scss";
-import LyricsInputs from "./LyricsInputs.component";
-import Answers from "./Answers.component";
+import LyricsInputs from "./SubPages/LyricsInputs.component";
+import Answers from "./SubPages/Answers.component";
 import { httpService } from "../../services/http.service";
 
 class LyricsPage extends PureComponent {
@@ -23,7 +23,11 @@ class LyricsPage extends PureComponent {
           });
         });
       case "hum":
-        return this.setState({ loadingStatus: true });
+        return this.setState({ loadingStatus: true }, () => {
+          return httpService.recognizeByHum(lyrics).then(answers => {
+            this.setState({ answers, loadingStatus: false, seeAnswer: true });
+          })
+        });
       default:
         return undefined;
     }
@@ -32,18 +36,24 @@ class LyricsPage extends PureComponent {
   toggleSeeAnswer = () =>
     this.setState(prevState => ({ seeAnswer: !prevState.seeAnswer }));
 
+  handleUserAnswer = (winner, song) => {
+    const {handleNewAnswer} = this.props;
+    handleNewAnswer(winner, song);
+    return this.toggleSeeAnswer();
+  };
+
   render() {
-    const { submitUserAnswer, toggleSeeAnswer } = this;
-    const { seeAnswer, answers } = this.state;
+    const { submitUserAnswer, handleUserAnswer } = this;
+    const { seeAnswer, answers, loadingStatus } = this.state;
     const { toggleGameStatus } = this.props;
     return seeAnswer ? (
       <Answers
         answers={answers}
-        toggleSeeAnswer={toggleSeeAnswer}
+        handleUserAnswer={handleUserAnswer}
         toggleGameStatus={toggleGameStatus}
       />
     ) : (
-      <LyricsInputs submitUserAnswer={submitUserAnswer} />
+      <LyricsInputs submitUserAnswer={submitUserAnswer} loadingStatus={loadingStatus} />
     );
   }
 }

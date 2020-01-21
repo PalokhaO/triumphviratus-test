@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { microphoneService } from "../../services/microphone.service";
+import { microphoneService } from "../../../services/microphone.service";
 
 const MicButton = ({onRecordingComplete}) => {
     const [isRecording, setIsRecording] = useState(false);
