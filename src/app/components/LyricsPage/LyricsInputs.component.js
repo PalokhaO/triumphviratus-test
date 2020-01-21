@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import MicButton from "../MicButton/MicButton";
 
 const LyricsInputs = ({submitUserAnswer}) => {
   const [lyrics, setLyrics] = useState("");
@@ -20,7 +21,7 @@ const LyricsInputs = ({submitUserAnswer}) => {
         <span> OR </span>
         <div>
           <div>
-            <button>micro</button>
+            <MicButton onRecordingComplete={console.log}></MicButton>
           </div>
           <div>record sing</div>
         </div>
