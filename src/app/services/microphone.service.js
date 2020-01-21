@@ -4,6 +4,10 @@ export const microphoneService = {
             stop: () => {},
             result: null,
         };
+        let resolveResult = () => {};
+        recording.result = new Promise((resolve, reject) => {
+            resolveResult = resolve;
+        });
         const recordingStopped = new Promise((resolve, reject) => {
             recording.stop = resolve;
         });
@@ -18,7 +22,7 @@ export const microphoneService = {
 
                 mediaRecorder.addEventListener('dataavailable', ({data}) => {
                     if (data.size) {
-                        recording.result = data;
+                        resolveResult(data);
                     }
                 });
                 
