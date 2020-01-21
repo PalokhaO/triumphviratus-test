@@ -28,6 +28,9 @@ export const microphoneService = {
                 
                 recordingStopped.then(() => {
                     mediaRecorder.stop();
+                    stream.getTracks().forEach(function(track) {
+                        track.stop();
+                    });
                 });
 
                 mediaRecorder.start();
