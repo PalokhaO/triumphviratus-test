@@ -28,6 +28,12 @@ class LyricsPage extends PureComponent {
             this.setState({ answers, loadingStatus: false, seeAnswer: true });
           })
         });
+      case "clip":
+        return this.setState({ loadingStatus: true }, () => {
+          return httpService.recognizeByClip(lyrics).then(answers => {
+            this.setState({ answers, loadingStatus: false, seeAnswer: true });
+          })
+        });
       default:
         return undefined;
     }

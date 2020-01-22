@@ -1,7 +1,36 @@
-body{
+@font-face {
+    font-family: Futura;
+    src: url(futura.ttf);
+}
+
+body {
     padding: 0;
     margin: 0;
     border: 0;
-    height: 100vh;
+    min-height: 100vh;
     width: 100%;
+    background: linear-gradient(180deg, #000018 51.43%, #000037 100%);
+    font-family: 'Nunito', sans-serif;
+    font-style: normal;
+    color: white;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 2.3rem;
+}
+
+button {
+    background: #0435FD;
+    border-radius: 4px;
+    color: white;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    padding: 1rem 3rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0025BD;
 }

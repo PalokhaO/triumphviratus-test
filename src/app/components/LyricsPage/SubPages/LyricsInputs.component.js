@@ -8,6 +8,7 @@ const LyricsInputs = ({ submitUserAnswer, loadingStatus }) => {
   const handleSubmit = () => submitUserAnswer(lyrics, "lyrics");
 
   const handleRecordingSubmit = file => submitUserAnswer(file, "hum");
+  const handleClipSubmit = file => submitUserAnswer(file, "clip");
 
   return (
     <section>
@@ -19,12 +20,17 @@ const LyricsInputs = ({ submitUserAnswer, loadingStatus }) => {
         <div>
           <textarea onChange={handleAreaOnChange} value={lyrics} />
         </div>
-        <span> OR </span>
+        <span> OR record yourself singing it</span>
         <div>
           <div>
             <MicButton onRecordingComplete={handleRecordingSubmit} />
           </div>
-          <div>record sing</div>
+        </div>
+        <span> OR record a piece of the song</span>
+        <div>
+          <div>
+            <MicButton onRecordingComplete={handleClipSubmit} />
+          </div>
         </div>
       </div>
       <button
