@@ -38,8 +38,8 @@ const ResultsPage = ({
           </div>
         )}
       </div>
-      <button onClick={toggleGameStatus}>quit</button>
-      <button onClick={startNewRound}>try again!</button>
+      <button variant="secondary" onClick={toggleGameStatus}>Quit</button>
+      <button onClick={startNewRound}>Play again</button>
     </div>
   );
 };

@@ -9,11 +9,11 @@ const Answers = ({ answers, handleUserAnswer }) => {
       {answer.cover && <img src={answer.cover}></img>}
       {answer.preview && <audio controls src={answer.preview}></audio>}
       <p>{answer.title}</p>
-      <button onClick={() => handleUserAnswer("machine",answer.title)}>
-        That’s what I looking for!
+      <button variant="secondary" onClick={() => handleUserAnswer("human",answer.title)}>
+        Wrong song
       </button>
-      <button onClick={() => handleUserAnswer("human",answer.title)}>
-        Wrong song, try again
+      <button onClick={() => handleUserAnswer("machine",answer.title)}>
+        That’s the one!
       </button>
     </div>
   );
