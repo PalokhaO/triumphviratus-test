@@ -1,8 +1,8 @@
 import React, { PureComponent } from "react";
 import LyricsPage from "../LyricsPage";
 import ResultsPage from "../ResultsPage/ResultsPage";
-
-const AMOUNT_OF_TRIES = 3;
+import TriesCounter from "./TriesCounter/TriesCounter";
+import { AMOUNT_OF_TRIES } from "../../configs/constants";
 
 class Dashboard extends PureComponent {
   constructor(props) {
@@ -69,10 +69,7 @@ class Dashboard extends PureComponent {
               <p>machine:</p>
               <p>{machine} points</p>
             </div>
-            <div>
-              <p>tries:</p>
-              <p>{tries} left</p>
-            </div>
+            <TriesCounter tries={tries}/>
           </div>
         </header>
         {tries === 0 || successSong ? (
