@@ -8,11 +8,11 @@ const Answers = ({ answers, handleUserAnswer }) => {
     <div>
       {answer.cover && <img src={answer.cover}></img>}
       {answer.preview && <audio controls src={answer.preview}></audio>}
-      <p>{answers.length ? answers[0].title : "no answer"}</p>
-      <button onClick={() => handleUserAnswer("machine",answers[0].title)}>
+      <p>{answer.title}</p>
+      <button onClick={() => handleUserAnswer("machine",answer.title)}>
         That’s what I looking for!
       </button>
-      <button onClick={() => handleUserAnswer("human",answers[0].title)}>
+      <button onClick={() => handleUserAnswer("human",answer.title)}>
         Wrong song, try again
       </button>
     </div>
