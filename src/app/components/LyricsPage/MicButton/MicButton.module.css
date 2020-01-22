@@ -9,3 +9,9 @@
     height: 1.3rem;
     width: 1.3rem;
 }
+
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.65rem;
+}

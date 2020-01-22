@@ -18,8 +18,9 @@ function findDeezerSong (item) {
         .then(res => res.data[0])
         .then(deezerItem => ({
             title: `${item.title} by ${item.artist}`,
-            deezer_id: deezerItem && deezerItem.id || null,
+            deezer_link: deezerItem && deezerItem.link || null,
             cover: deezerItem && deezerItem.album && deezerItem.album.cover || null,
+            preview: deezerItem && deezerItem.preview,
         }));
 }
 

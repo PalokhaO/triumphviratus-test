@@ -18,7 +18,7 @@ const MicButton = ({onRecordingComplete}) => {
     }
 
     return(
-        <div>
+        <span className={styles.wrapper}>
             <button onClick={handleClick} className={styles.button}><img className={styles.icon} src="images/mic.svg"></img></button>
             <span>
                 {isRecording
@@ -26,7 +26,7 @@ const MicButton = ({onRecordingComplete}) => {
                     : 'Press to start recording'
                 }
             </span>
-        </div>
+        </span>
     )
 };
 
