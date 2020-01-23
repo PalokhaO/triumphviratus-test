@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import styles from './AudioPlayer.module.css';
 
-const AudioPlayer = ({src}) => {
+const AudioPlayer = ({src, title}) => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [progress, setProgress] = useState(0);
 
@@ -28,15 +28,16 @@ const AudioPlayer = ({src}) => {
         audioRef.current.currentTime = e.target.value * audioRef.current.duration;
     }
 
-    return <>
-        <audio src={src} ref={audioRef} onTimeUpdate={updateProgress}></audio>
-        <div className={styles.wrapper}>
-            <button className={styles.button} onClick={() => togglePause()}>
-                <img className={styles.icon} src={isPlaying ? '/images/pause.svg' : '/images/play.svg'}></img>
-            </button>
+    return <div className={styles.wrapper}>
+        <button variant="secondary" className={styles.button} onClick={() => togglePause()}>
+            <img className={styles.icon} src={isPlaying ? '/images/pause.svg' : '/images/play.svg'}></img>
+        </button>
+        <div className={styles.labelProgressWrapper}>
+            <label className={styles.label}>{title}</label>
             <input type="range" ref={rangeRef} className={styles.range} value={progress} onChange={seek} min="0" max="1" step="0.001"></input>
         </div>
-    </>;
+        <audio src={src} ref={audioRef} onTimeUpdate={updateProgress}></audio>
+    </div>;
 }
 
 export default AudioPlayer;

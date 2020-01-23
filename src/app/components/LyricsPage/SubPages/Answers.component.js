@@ -7,9 +7,13 @@ const Answers = ({ answers, handleUserAnswer }) => {
   };
   return (
     <div>
-      {answer.cover && <img src={answer.cover}></img>}
-      {answer.preview && <AudioPlayer controls src={answer.preview}></AudioPlayer>}
-      <p>{answer.title}</p>
+      
+      {
+        answer.preview
+          ? <AudioPlayer controls src={answer.preview} title={answer.title}></AudioPlayer>
+          : <span>{answer.title}</span>
+      }
+      
       <button variant="secondary" onClick={() => handleUserAnswer("human",answer.title)}>
         Wrong song
       </button>
