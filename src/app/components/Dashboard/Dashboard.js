@@ -18,7 +18,7 @@ class Dashboard extends PureComponent {
     };
   }
 
-  handleNewAnswer = (winner, song) => {
+  handleNewAnswer = (winner, guess) => {
     const { tries, resultsCount, wrongSongs } = this.state;
 
     if (winner === "machine") {
@@ -27,7 +27,7 @@ class Dashboard extends PureComponent {
           ...resultsCount,
           machine: resultsCount.machine + 1
         },
-        successSong: song
+        successSong: guess
       });
     } else if (tries === 1){
       return this.setState({
@@ -36,12 +36,12 @@ class Dashboard extends PureComponent {
           human: resultsCount.human + 1
         },
         tries: tries - 1,
-        wrongSongs: [...wrongSongs, song]
+        wrongSongs: [...wrongSongs, guess]
       });
     } else {
       return this.setState({
         tries: tries - 1,
-        wrongSongs: [...wrongSongs, song]
+        wrongSongs: [...wrongSongs, guess]
       });
     }
   };

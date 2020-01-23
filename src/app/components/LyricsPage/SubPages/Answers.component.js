@@ -14,10 +14,10 @@ const Answers = ({ answers, handleUserAnswer }) => {
           : <span>{answer.title}</span>
       }
       
-      <button variant="secondary" onClick={() => handleUserAnswer("human",answer.title)}>
+      <button variant="secondary" onClick={() => handleUserAnswer("human", answer)}>
         Wrong song
       </button>
-      <button onClick={() => handleUserAnswer("machine",answer.title)}>
+      <button onClick={() => handleUserAnswer("machine", answer)}>
         That’s the one!
       </button>
     </div>

@@ -4,47 +4,69 @@ import LyricsInputs from "./SubPages/LyricsInputs.component";
 import Answers from "./SubPages/Answers.component";
 import { httpService } from "../../services/http.service";
 
+const defaultState = {
+  answers: [],
+  seeAnswer: false,
+  loadingStatus: false
+};
+
 class LyricsPage extends PureComponent {
   constructor(props) {
     super(props);
-    this.state = {
-      answers: [],
-      seeAnswer: false,
-      loadingStatus: false
-    };
+    this.state = defaultState;
   }
 
   submitUserAnswer = (lyrics, type) => {
-    switch (type) {
-      case "lyrics":
-        return this.setState({ loadingStatus: true }, () => {
-          return httpService.recognizeByLyrics(lyrics).then(answers => {
-            this.setState({ answers, loadingStatus: false, seeAnswer: true });
-          });
-        });
-      case "hum":
-        return this.setState({ loadingStatus: true }, () => {
-          return httpService.recognizeByHum(lyrics).then(answers => {
-            this.setState({ answers, loadingStatus: false, seeAnswer: true });
-          })
-        });
-      case "clip":
-        return this.setState({ loadingStatus: true }, () => {
-          return httpService.recognizeByClip(lyrics).then(answers => {
-            this.setState({ answers, loadingStatus: false, seeAnswer: true });
-          })
-        });
-      default:
-        return undefined;
-    }
+    return this.setState({ loadingStatus: true }, async () => {
+      let answersPromise;
+      switch (type) {
+        case "lyrics":
+          answersPromise = httpService.recognizeByLyrics(lyrics);
+          break;
+        case "hum":
+          answersPromise = httpService.recognizeByHum(lyrics);
+          break;
+        case "clip":
+          answersPromise = httpService.recognizeByClip(lyrics);
+          break;
+        default:
+          answersPromise = Promise.resolve([]);
+          break;
+      }
+
+      const newAnswers = await answersPromise;
+
+      const commonAnswers = this.state.answers.filter(oldAnswer =>
+        newAnswers.find(newAnswer => newAnswer.id === oldAnswer.id)
+      );
+      const oldAnswersFiltered = this.state.answers.filter(oldAnswer =>
+        !newAnswers.find(newAnswer => newAnswer.id === oldAnswer.id)
+      );
+      const newAnswersFiltered = newAnswers.filter(oldAnswer =>
+        !this.state.answers.find(newAnswer => newAnswer.id === oldAnswer.id)
+      );
+
+      this.setState({
+        loadingStatus: false,
+        seeAnswer: true,
+        answers: [
+          ...commonAnswers,
+          ...newAnswersFiltered,
+          ...oldAnswersFiltered,
+        ]
+      });
+    });
   };
 
   toggleSeeAnswer = () =>
     this.setState(prevState => ({ seeAnswer: !prevState.seeAnswer }));
 
-  handleUserAnswer = (winner, song) => {
+  handleUserAnswer = (winner, guess) => {
     const {handleNewAnswer} = this.props;
-    handleNewAnswer(winner, song);
+    this.setState({
+      answers: this.state.answers.filter(answer => answer.title === guess.title)
+    });
+    handleNewAnswer(winner, guess);
     return this.toggleSeeAnswer();
   };
 
