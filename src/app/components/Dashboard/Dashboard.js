@@ -3,12 +3,13 @@ import LyricsPage from "../LyricsPage";
 import ResultsPage from "../ResultsPage/ResultsPage";
 import TriesCounter from "./TriesCounter/TriesCounter";
 import { AMOUNT_OF_TRIES } from "../../configs/constants";
+import "./styles.scss";
 
 class Dashboard extends PureComponent {
   constructor(props) {
     super(props);
     this.state = {
-      successSong: "",
+      successSong: null,
       wrongSongs: [],
       tries: AMOUNT_OF_TRIES,
       resultsCount: {
@@ -29,7 +30,7 @@ class Dashboard extends PureComponent {
         },
         successSong: guess
       });
-    } else if (tries === 1){
+    } else if (tries === 1) {
       return this.setState({
         resultsCount: {
           ...resultsCount,
@@ -46,11 +47,12 @@ class Dashboard extends PureComponent {
     }
   };
 
-  startNewRound = () => this.setState({
-    successSong: "",
-    wrongSongs: [],
-    tries: AMOUNT_OF_TRIES,
-  });
+  startNewRound = () =>
+    this.setState({
+      successSong: "",
+      wrongSongs: [],
+      tries: AMOUNT_OF_TRIES
+    });
 
   render() {
     const { resultsCount, tries, successSong, wrongSongs } = this.state;
@@ -58,19 +60,50 @@ class Dashboard extends PureComponent {
     const { toggleGameStatus } = this.props;
     const { handleNewAnswer, startNewRound } = this;
     return (
-      <main>
-        <header>
-          <div>
-            <div>
-              <p>human:</p>
-              <p>{human} points</p>
-            </div>
-            <div>
-              <p>machine:</p>
-              <p>{machine} points</p>
-            </div>
-            <TriesCounter tries={tries}/>
+      <main className="Dashboard">
+        <header className="Dashboard__header">
+          <div className="Dashboard__header--exitBtn" onClick={toggleGameStatus}>
+            <svg
+              width="32"
+              height="32"
+              viewBox="0 0 32 32"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M20.5466 9.88L18.6666 8L10.6666 16L18.6666 24L20.5466 22.12L14.44 16L20.5466 9.88Z"
+                fill="black"
+              />
+              <mask
+                id="mask0"
+                maskUnits="userSpaceOnUse"
+                x="10"
+                y="8"
+                width="11"
+                height="16"
+              >
+                <path
+                  d="M20.5466 9.88L18.6666 8L10.6666 16L18.6666 24L20.5466 22.12L14.44 16L20.5466 9.88Z"
+                  fill="white"
+                />
+              </mask>
+              <g mask="url(#mask0)">
+                <rect x="-24" y="-24" width="80" height="80" fill="#AEBCD2" />
+              </g>
+            </svg>
           </div>
+          <div className="Dashboard__header__pointsCounter">
+            <div>
+              <span>Human:</span>
+              <span>{human} POINTS</span>
+            </div>
+            <div className="Dashboard__header__pointsCounter--dash"/>
+            <div>
+              <span>Machine:</span>
+              <span>{machine} POINTS</span>
+            </div>
+          </div>
+          <TriesCounter tries={tries} />
         </header>
         {tries === 0 || successSong ? (
           <ResultsPage
@@ -80,9 +113,7 @@ class Dashboard extends PureComponent {
             startNewRound={startNewRound}
           />
         ) : (
-          <LyricsPage
-            handleNewAnswer={handleNewAnswer}
-          />
+          <LyricsPage handleNewAnswer={handleNewAnswer} />
         )}
       </main>
     );

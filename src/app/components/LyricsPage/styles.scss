@@ -1,19 +1,61 @@
 .lyricsPage {
-  &__header {
+  &__dialog {
+    display: flex;
+    align-items: flex-start;
     justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    &--gif {
+      width: 10.7rem;
+      height: 10.7rem;
+    }
+    &--text {
+      width: 100%;
+      background: #212143;
+      border-radius: 12px;
+
+      display: flex;
+      padding: 21px 32px;
+      flex-direction: column;
+      span:first-child{
+        font-weight: 800;
+        font-family: Futura PT,sans-serif;
+      }
+    }
+    &__textInput{
+      textarea{
+        width: 100% !important;
+        max-width: 426px !important;
+      }
+      flex-wrap: wrap;
+      margin-top: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  &__inputVariants{
+    flex-wrap: wrap;
+    margin-top: 48px;
     display: flex;
     align-items: center;
-      &__results {
-          justify-content: space-around;
-          display: flex;
-          align-items: center;
-
-          div:nth-child(2) {
-              border-left: 1px solid black;
-          }
-          div {
-              padding: 0px 16px;
-          }
-      }
+    justify-content: center;
+    div{
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__borderedDiv{
+    font-family: Futura PT,sans-serif;
+    padding: 12px 32px;
+    border: 2px solid #212143;
+    border-radius: 12px;
+  }
+  .songDiv{
+    margin-top: 32px;
   }
 }

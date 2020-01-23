@@ -4,7 +4,7 @@ import styles from './StartPage.module.css';
 const StartPage = ({ toggleGameStatus }) => {
   return (
     <section className={styles.wrapper}>
-      <img className={styles.logo} src="/images/ai.gif"></img>
+      <img className={styles.logo} src="/images/ai.gif"/>
       <h1>Music Akinator</h1>    
       <span>
         Forgot the song but know lyrics or can sing it?

@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d223ce9-8305-408d-8424-a1d6f9b46edd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/app/components/Dashboard/styles.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/components/ResultsPage/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/Dashboard/Dashboard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Dashboard/Dashboard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/LyricsPage/Answers.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/LyricsPage/SubPages/Answers.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/LyricsPage/LyricsInputs.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/LyricsPage/SubPages/LyricsInputs.component.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/LyricsPage/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/LyricsPage/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/components/MicButton/MicButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/LyricsPage/MicButton/MicButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/Dashboard/TriesCounter/TriesCounter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/Dashboard/TriesCounter/TriesCounter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/LyricsPage/MicButton/MicButton.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/LyricsPage/MicButton/MicButton.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/LyricsPage/SubPages/Answers.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/LyricsPage/SubPages/Answers.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/LyricsPage/SubPages/LyricsInputs.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/LyricsPage/SubPages/LyricsInputs.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/LyricsPage/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/LyricsPage/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/components/ResultsPage/ResultsPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/ResultsPage/ResultsPage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/srv/audd-deezer.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/srv/audd-deezer.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/StartPage/StartPage.component.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/StartPage/StartPage.component.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/configs/constants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/configs/constants.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/main.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/main.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,23 +26,29 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.44996893">
+    <splitter split-orientation="horizontal" split-proportion="0.52150536">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/package.json">
+            <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+                <state relative-caret-position="153">
+                  <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+                  <folding>
+                    <element signature="e#0#45#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/SubPages/LyricsInputs.component.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="544">
-                  <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+                <state relative-caret-position="-145">
+                  <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
+                  <folding>
+                    <element signature="e#0#40#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -47,10 +56,34 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/app/components/Dashboard/Dashboard.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
+                <state relative-caret-position="195">
+                  <caret line="89" column="36" lean-forward="true" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
                   <folding>
                     <element signature="e#0#45#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/SubPages/Answers.component.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="442">
+                  <caret line="26" column="47" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="47" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/app/components/ResultsPage/ResultsPage.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="365">
+                  <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -61,31 +94,33 @@
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/styles.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-                </state>
-              </provider>
+            <entry file="file://$PROJECT_DIR$/src/app/components/ResultsPage/styles.scss">
+              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/index.js">
+            <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="731">
-                  <caret line="55" column="84" selection-start-line="55" selection-start-column="84" selection-end-line="55" selection-end-column="84" />
-                  <folding>
-                    <element signature="e#0#45#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="884">
+                  <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/app/components/ResultsPage/ResultsPage.js">
+            <entry file="file://$PROJECT_DIR$/src/app/components/Dashboard/styles.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="425">
-                  <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+                <state relative-caret-position="382">
+                  <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="40" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/app/main.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
                 </state>
               </provider>
             </entry>
@@ -99,6 +134,7 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="SCSS File" />
       </list>
     </option>
   </component>
@@ -111,6 +147,8 @@
       <find>humanAns</find>
       <find>handleWrongAnswer</find>
       <find>handleNewRound</find>
+      <find>lyricsPage</find>
+      <find>ai.gif</find>
     </findStrings>
     <replaceStrings>
       <replace>LyricsInputs</replace>
@@ -131,25 +169,31 @@
         <option value="$PROJECT_DIR$/app/index.js" />
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/app/components/App.js" />
-        <option value="$PROJECT_DIR$/src/app/components/StartPage/StartPage.component.js" />
         <option value="$PROJECT_DIR$/src/app/components/LyricsPage/styles.css" />
         <option value="$PROJECT_DIR$/src/app/main.css" />
-        <option value="$PROJECT_DIR$/src/app/components/LyricsPage/styles.scss" />
         <option value="$PROJECT_DIR$/src/app/components/AnswersPage/AnswersPage.js" />
         <option value="$PROJECT_DIR$/src/app/components/LyricsPage/LyricsPage.component.js" />
         <option value="$PROJECT_DIR$/src/app/components/LyricsPage/LyricsInputs.js" />
-        <option value="$PROJECT_DIR$/src/app/components/App.js" />
         <option value="$PROJECT_DIR$/src/app/components/LyricsPage/Answers.component.js" />
         <option value="$PROJECT_DIR$/src/app/components/LyricsPage/LyricsInputs.component.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/app/services/http.service.js" />
         <option value="$PROJECT_DIR$/srv/index.mjs" />
         <option value="$PROJECT_DIR$/srv/audd-deezer.mjs" />
-        <option value="$PROJECT_DIR$/src/app/components/LyricsPage/SubPages/Answers.component.js" />
-        <option value="$PROJECT_DIR$/src/app/components/Dashboard/Dashboard.js" />
-        <option value="$PROJECT_DIR$/src/app/components/ResultsPage/ResultsPage.js" />
         <option value="$PROJECT_DIR$/src/app/components/LyricsPage/index.js" />
+        <option value="$PROJECT_DIR$/src/app/configs/constants.js" />
+        <option value="$PROJECT_DIR$/src/app/components/Dashboard/TriesCounter/TriesCounter.js" />
+        <option value="$PROJECT_DIR$/src/app/components/Dashboard/styles.scss" />
+        <option value="$PROJECT_DIR$/src/app/components/StartPage/StartPage.component.js" />
+        <option value="$PROJECT_DIR$/src/app/main.scss" />
+        <option value="$PROJECT_DIR$/src/app/components/LyricsPage/MicButton/MicButton.js" />
         <option value="$PROJECT_DIR$/src/app/components/LyricsPage/SubPages/LyricsInputs.component.js" />
+        <option value="$PROJECT_DIR$/src/app/components/ResultsPage/styles.scss" />
+        <option value="$PROJECT_DIR$/src/app/components/LyricsPage/SubPages/Answers.component.js" />
+        <option value="$PROJECT_DIR$/src/app/components/App.js" />
+        <option value="$PROJECT_DIR$/src/app/components/Dashboard/Dashboard.js" />
+        <option value="$PROJECT_DIR$/src/app/components/LyricsPage/styles.scss" />
+        <option value="$PROJECT_DIR$/src/app/components/ResultsPage/ResultsPage.js" />
       </list>
     </option>
   </component>
@@ -201,12 +245,47 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Dashboard" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="triumph-akinator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="triumph-akinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="LyricsPage" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="triumph-akinator" type="b2602c69:ProjectViewProjectNode" />
               <item name="triumph-akinator" type="462c0819:PsiDirectoryNode" />
-              <item name="srv" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="LyricsPage" type="462c0819:PsiDirectoryNode" />
+              <item name="SubPages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="triumph-akinator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="triumph-akinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ResultsPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="triumph-akinator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="triumph-akinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="StartPage" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="triumph-akinator" type="b2602c69:ProjectViewProjectNode" />
+              <item name="triumph-akinator" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -219,7 +298,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/node_modules/node-sass" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -291,11 +370,12 @@
       <workItem from="1579463467218" duration="3276000" />
       <workItem from="1579547488166" duration="11207000" />
       <workItem from="1579634939633" duration="7006000" />
+      <workItem from="1579807328166" duration="8974000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21489000" />
+    <option name="totallyTimeSpent" value="30391000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -307,7 +387,7 @@
       <window_info id="Structure" order="3" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="GraphQL" order="1" weight="0.32974428" />
-      <window_info anchor="bottom" id="Terminal" order="2" weight="0.26327193" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.1744312" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.3298731" />
       <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="5" />
@@ -346,79 +426,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/StartPage/StartPage.component.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="4" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/main.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" lean-forward="true" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/AnswersPage/AnswersPage.js" />
-    <entry file="file://$PROJECT_DIR$/src/app/components/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="49" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/services/microphone.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="15" selection-end-line="31" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/MicButton/MicButton.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/services/http.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="34" selection-start-column="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="20" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/srv/audd-deezer.mjs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="935">
@@ -439,44 +447,176 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/ResultsPage/ResultsPage.js">
+    <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
+        <state relative-caret-position="51">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/SubPages/Answers.component.js">
+    <entry file="file://$PROJECT_DIR$/src/app/configs/constants.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="32" selection-start-column="32" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="7" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/Dashboard/TriesCounter/TriesCounter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="20" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/services/http.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="34" selection-start-column="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/services/microphone.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/StartPage/StartPage.module.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="3" selection-start-line="11" selection-start-column="3" selection-end-line="12" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/MicButton/MicButton.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="58" selection-start-line="26" selection-start-column="58" selection-end-line="26" selection-end-column="58" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/StartPage/StartPage.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/AudioPlayer/AudioPlayer.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="6" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+          <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/Dashboard/Dashboard.js">
+    <entry file="file://$PROJECT_DIR$/src/app/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="73" column="33" lean-forward="true" selection-start-line="73" selection-start-column="33" selection-end-line="73" selection-end-column="33" />
+        <state relative-caret-position="85">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/ResultsPage/styles.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/SubPages/LyricsInputs.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-145">
+          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
           <folding>
-            <element signature="e#0#45#0" expanded="true" />
+            <element signature="e#0#40#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="55" column="84" selection-start-line="55" selection-start-column="84" selection-end-line="55" selection-end-column="84" />
+        <state relative-caret-position="153">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/SubPages/LyricsInputs.component.js">
+    <entry file="file://$PROJECT_DIR$/src/app/components/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="33" column="28" lean-forward="true" selection-start-line="33" selection-start-column="28" selection-end-line="33" selection-end-column="28" />
+        <state relative-caret-position="102">
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#40#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/Dashboard/Dashboard.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="89" column="36" lean-forward="true" selection-start-line="89" selection-start-column="36" selection-end-line="89" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/SubPages/Answers.component.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/Dashboard/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="41" column="6" selection-start-line="41" selection-start-column="6" selection-end-line="41" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/LyricsPage/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" column="38" selection-start-line="52" selection-start-column="38" selection-end-line="52" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app/components/ResultsPage/ResultsPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="30" column="12" lean-forward="true" selection-start-line="30" selection-start-column="12" selection-end-line="30" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

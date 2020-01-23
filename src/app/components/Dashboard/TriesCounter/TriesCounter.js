@@ -6,9 +6,9 @@ const TriesCounter = ({ tries }) => {
     .fill(1)
     .map((item, index) => index + 1);
   return (
-    <div>
-      <p>{tries} tries left</p>
-      <p>
+    <div className="Dashboard__header__triesCounter">
+      <span>{tries} tries left</span>
+      <span>
         {arrTries.map(number => {
           return number <= tries ? (
             <svg
@@ -32,7 +32,7 @@ const TriesCounter = ({ tries }) => {
             </svg>
           );
         })}
-      </p>
+      </span>
     </div>
   );
 };
