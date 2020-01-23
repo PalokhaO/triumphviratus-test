@@ -1,4 +1,5 @@
 import React from "react";
+import AudioPlayer from "../../AudioPlayer/AudioPlayer";
 
 const Answers = ({ answers, handleUserAnswer }) => {
   const answer = answers[0] || {
@@ -7,7 +8,7 @@ const Answers = ({ answers, handleUserAnswer }) => {
   return (
     <div>
       {answer.cover && <img src={answer.cover}></img>}
-      {answer.preview && <audio controls src={answer.preview}></audio>}
+      {answer.preview && <AudioPlayer controls src={answer.preview}></AudioPlayer>}
       <p>{answer.title}</p>
       <button variant="secondary" onClick={() => handleUserAnswer("human",answer.title)}>
         Wrong song
