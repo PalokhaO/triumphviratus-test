@@ -19,7 +19,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   background: linear-gradient(180deg, #000018 51.43%, #000037 100%);
-  font-family: "Nunito", sans-serif;
+  font-family: "Futura PT", "Nunito", sans-serif;
   font-style: normal;
   color: white;
 }
@@ -27,6 +27,11 @@ body {
 h1 {
   font-weight: 900;
   font-size: 2.3rem;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 button {

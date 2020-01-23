@@ -24,7 +24,9 @@ function findDeezerSong (item) {
         }));
 }
 
-export const recognizeByLyrics = lyrics => fetch(`https://api.audd.io/?method=findLyrics&api_token=${token}&q=${lyrics}`)
+export const recognizeByLyrics = lyrics => fetch(`https://api.audd.io/?method=findLyrics&api_token=${token}&q=${
+        encodeURIComponent(lyrics)
+    }`)
     .then(res => res.json())
     .then(body => (body.result || []))
     .then(addDeezerInfo);

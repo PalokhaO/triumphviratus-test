@@ -12,20 +12,27 @@ const ResultsPage = ({
       <div className="lyricsPage__dialog">
         <img className="lyricsPage__dialog--gif" src="/images/ai.gif" />
         <div className="lyricsPage__dialog--text" style={{width:"unset"}}>
-          {!successSong ? (
+          {successSong ? (
             <>
-              <span>You lose! I guessed the song.</span>
+              <h4>You lose!</h4>
               <span>
-                Time to understand that I can guess any song.
+                I guessed the song. Time to understand that I can guess any song.
               </span>
               <span>Here are my tries:</span>
             </>
           ) : (
-            <span>
-              You are winner! I didn’t guess the song. Don’t be so happy, maybe
-              your request was too complicated. This time you win, human.  Here
-              is how I was trying to guess the song:
-            </span>
+            <>
+              <h4>You win this time!</h4>
+              <span>
+                I didn’t guess the song. Don’t be so happy, human.
+              </span>
+              <span>
+                Maybe your request was too complicated.
+              </span>
+              <span>
+                Here is how I was trying to guess the song:
+              </span>
+            </>
           )}
         </div>
       </div>
