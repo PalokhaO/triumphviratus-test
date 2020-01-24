@@ -1,0 +1,66 @@
+.hidden {
+    visibility: hidden;
+}
+
+.wrapper {
+    display: inline-flex;
+    align-items: center;
+}
+
+.button {
+    height: 1.6rem;
+    line-height: 0;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.labelProgressWrapper {
+    display: inline-flex;
+    flex-direction: column;
+    padding-top: 0.6rem;
+}
+
+.label {
+    font-weight: 500;
+    line-height: 1.3rem;
+}
+
+.icon {
+    height: 0.5rem;
+    width: 0.5rem;
+}
+
+.range {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 0.25rem 0;
+    height: 0.1rem;
+    background: none;
+    outline: none;
+    margin: 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.range, .range:hover, .range:focus {
+    border: none;
+    background: none;
+}
+
+.range::-webkit-slider-thumb {
+    appearance: none;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    height: 0.2rem;
+    width: 0.2rem;
+    position: relative;
+    top: -0.05rem;
+}
+
+.range::-webkit-slider-runnable-track {
+    height: 0.1rem;
+    border-radius: 0.05rem;
+    background: #212143;
+    box-shadow: var(--shadow);
+}

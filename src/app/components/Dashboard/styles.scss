@@ -1,0 +1,65 @@
+.Dashboard{
+  &__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 630px){
+      flex-direction: column;
+      &__pointsCounter{
+        margin: 32px 0;
+      }
+    }
+
+    &--exitBtn{
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      opacity: 0.2;
+      border: 1px solid #B4BFFF;
+      box-sizing: border-box;
+      border-radius: 100px;
+    }
+    &__pointsCounter{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+      &--dash{
+        margin: 0 42px;
+        border: 2px solid #4F4F86;
+        width: 0px;
+        height: 100px;
+        @media screen and (max-width: 430px){
+          width: 100px;
+          height: 0px;
+        }
+      }
+      font-family: Futura PT,sans-serif;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 31px;
+      text-align: right;
+      div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      div p:nth-child(2){
+        font-weight: 800;
+      }
+    }
+    &__triesCounter{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

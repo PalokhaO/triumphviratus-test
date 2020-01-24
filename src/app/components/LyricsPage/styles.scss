@@ -1,0 +1,57 @@
+.lyricsPage {
+  &__dialog {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    &--gif {
+      width: 10.7rem;
+      height: 10.7rem;
+    }
+    &--text {
+      width: 100%;
+      background: #212143;
+      border-radius: 12px;
+
+      display: flex;
+      padding: 21px 32px;
+      flex-direction: column;
+    }
+    &__textInput{
+      textarea{
+        width: 100%;
+        box-sizing: border-box;
+      }
+      flex-wrap: wrap;
+      margin-top: 32px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+  &__inputVariants{
+    flex-wrap: wrap;
+    margin-top: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  &__borderedDiv{
+    font-family: Futura PT,sans-serif;
+    padding: 12px 32px;
+    border: 2px solid #212143;
+    border-radius: 12px;
+  }
+  .songDiv{
+    margin-top: 32px;
+  }
+}
