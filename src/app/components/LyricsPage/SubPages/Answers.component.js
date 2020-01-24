@@ -15,11 +15,7 @@ const Answers = ({ answers, handleUserAnswer }) => {
             <span> I think the song may be:</span>
           </div>
           <div className="lyricsPage__borderedDiv songDiv">
-            {answer.preview ? (
-              <AudioPlayer controls src={answer.preview} title={answer.title} />
-            ) : (
-              <span>{answer.title}</span>
-            )}
+            <AudioPlayer src={answer.preview} title={answer.title} />
           </div>
         </div>
       </div>

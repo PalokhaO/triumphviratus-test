@@ -39,22 +39,18 @@ const LyricsInputs = ({ submitUserAnswer, loadingStatus }) => {
       <div className="lyricsPage__inputVariants">
         <div>
           <span> OR record yourself singing it</span>
-          <div>
-            <MicButton
-              onRecordingComplete={handleRecordingSubmit}
-              disabled={loadingStatus ? "disabled" : undefined}
-            />
-          </div>
+          <MicButton
+            onRecordingComplete={handleRecordingSubmit}
+            disabled={loadingStatus ? "disabled" : undefined}
+          />
         </div>
 
         <div>
           <span> OR record a piece of the song</span>
-          <div>
-            <MicButton
-              onRecordingComplete={handleClipSubmit}
-              disabled={loadingStatus ? "disabled" : undefined}
-            />
-          </div>
+          <MicButton
+            onRecordingComplete={handleClipSubmit}
+            disabled={loadingStatus ? "disabled" : undefined}
+          />
         </div>
       </div>
     </section>

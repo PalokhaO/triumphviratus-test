@@ -1,5 +1,7 @@
 import React from "react";
 import "./styles.scss";
+import AudioPlayer from "../AudioPlayer/AudioPlayer";
+import styles from './ResultsPage.module.css';
 
 const ResultsPage = ({
   toggleGameStatus,
@@ -39,17 +41,17 @@ const ResultsPage = ({
 
       <div className="lyricsPage__inputVariants">
         {wrongSongs.length > 0 && (
-          <div className="lyricsPage__borderedDiv">
+          <div className={`lyricsPage__borderedDiv ${styles.guesses}`}>
             <p><b>Wrong tries:</b></p>
             {wrongSongs.map((song, index) => (
-              <p key={index}>{song.title}</p>
+              <AudioPlayer key={index} src={song.preview} title={song.title} />
             ))}
           </div>
         )}
         {successSong && (
-          <div className="lyricsPage__borderedDiv">
+          <div className={`lyricsPage__borderedDiv ${styles.guesses}`}>
             <p><b>Success try:</b></p>
-            <p>{successSong.title}</p>
+            <AudioPlayer src={successSong.preview} title={successSong.title} />
           </div>
         )}
       </div>

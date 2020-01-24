@@ -20,8 +20,8 @@
     }
     &__textInput{
       textarea{
-        width: 100% !important;
-        max-width: 426px !important;
+        width: 100%;
+        box-sizing: border-box;
       }
       flex-wrap: wrap;
       margin-top: 32px;
@@ -37,8 +37,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    div{
-      flex-wrap: wrap;
+
+    > div {
       display: flex;
       flex-direction: column;
       align-items: center;

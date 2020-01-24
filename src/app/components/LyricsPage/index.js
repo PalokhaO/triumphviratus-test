@@ -64,7 +64,7 @@ class LyricsPage extends PureComponent {
   handleUserAnswer = (winner, guess) => {
     const {handleNewAnswer} = this.props;
     this.setState({
-      answers: this.state.answers.filter(answer => answer.title === guess.title)
+      answers: this.state.answers.filter(answer => answer.title !== guess.title)
     });
     handleNewAnswer(winner, guess);
     return this.toggleSeeAnswer();

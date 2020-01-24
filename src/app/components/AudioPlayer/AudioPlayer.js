@@ -32,16 +32,18 @@ const AudioPlayer = ({src, title}) => {
 
     const rangeClassName = `${styles.range} ${isStarted ? '' : styles.hidden}`
 
-    return <div className={styles.wrapper}>
-        <button variant="secondary" className={styles.button} onClick={() => togglePause()}>
-            <img className={styles.icon} src={isPlaying ? '/images/pause.svg' : '/images/play.svg'}></img>
-        </button>
-        <div className={styles.labelProgressWrapper}>
-            <label className={styles.label}>{title}</label>
-            <input type="range" ref={rangeRef} className={rangeClassName} value={progress} onChange={seek} min="0" max="1" step="0.001"></input>
+    return src
+        ? <div className={styles.wrapper}>
+            <button variant="secondary" className={styles.button} onClick={() => togglePause()}>
+                <img className={styles.icon} src={isPlaying ? '/images/pause.svg' : '/images/play.svg'}></img>
+            </button>
+            <div className={styles.labelProgressWrapper}>
+                <label className={styles.label}>{title}</label>
+                <input type="range" ref={rangeRef} className={rangeClassName} value={progress} onChange={seek} min="0" max="1" step="0.001"></input>
+            </div>
+            <audio src={src} ref={audioRef} onTimeUpdate={updateProgress}></audio>
         </div>
-        <audio src={src} ref={audioRef} onTimeUpdate={updateProgress}></audio>
-    </div>;
+        : <span>{title}</span>;
 }
 
 export default AudioPlayer;
