@@ -1,13 +1,17 @@
 import express from 'express';
 import cors from 'cors';
+import path from 'path';
 import os from 'os';
 import { recognizeByLyrics, recognizeByClip, recognizeByHum } from './audd-deezer.mjs';
 import formData from 'express-form-data';
 
-const port = 5000;
+const port = process.env.NODE_ENV === 'production'
+    ? process.env.PORT
+    : 5000;
 
 const app = express();
 app.use(cors());
+app.use(express.static(path.join(process.cwd(), '/build')));
 
 const options = {
     uploadDir: os.tmpdir(),
@@ -40,5 +44,9 @@ app.post('/by_hum', (req, res) =>
         .then(response => res.json(response))
         .catch(e => res.status(500).send(e.message))
 );
+
+app.get('*', (req,res) =>{
+    res.sendFile(path.join(process.cwd(), '/build/index.html'));
+});
 
 app.listen(port);

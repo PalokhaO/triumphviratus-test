@@ -1,4 +1,6 @@
-const apiUrl = 'http://localhost:5000';
+const apiUrl = process.env.NODE_ENV === 'production'
+    ? ''
+    : 'http://localhost:5000';
 
 export const httpService = {
     recognizeByLyrics: lyrics => fetch(`${apiUrl}/by_lyrics?q=${lyrics}`)
