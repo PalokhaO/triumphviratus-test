@@ -1,7 +1,7 @@
 import fetch from 'node-fetch';
 import FormData from 'form-data';
 
-const token = 'dde06402981e38bbbe2730b33420d984';
+const token = 'e999c7db186ba9c6edbf7ec687db3d68';
 
 function addDeezerInfo(items) {
     return Promise.all(items.map(findDeezerSong));

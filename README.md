@@ -4,7 +4,7 @@ link: https://triumph-akinator.herokuapp.com/
 # triumphviratus-test
 Test task for Int20h 2020 hackaton
 
-API token: dde06402981e38bbbe2730b33420d984 (yes, it's not secure, but hey - that's a free one!)
+API token: e999c7db186ba9c6edbf7ec687db3d68 (yes, it's not secure, but hey - that's a free one!)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
