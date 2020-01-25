@@ -46,6 +46,13 @@ button {
   margin: 0.65rem;
 }
 
+button:disabled{
+  background: #212846 !important;
+  border:none !important;
+  color: #7D8ABF;
+  cursor: initial;
+}
+
 button[variant="secondary"] {
   border: 1px solid #0435fd;
   background: none;

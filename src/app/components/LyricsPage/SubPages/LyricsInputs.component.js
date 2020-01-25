@@ -29,7 +29,9 @@ const LyricsInputs = ({ submitUserAnswer, loadingStatus }) => {
             />
             <button
               onClick={handleSubmit}
-              disabled={loadingStatus ? "disabled" : undefined}
+              disabled={
+                loadingStatus || !lyrics.length ? "disabled" : undefined
+              }
             >
               {loadingStatus ? "..." : "Check"}
             </button>
