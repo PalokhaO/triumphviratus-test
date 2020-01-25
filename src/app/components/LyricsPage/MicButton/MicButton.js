@@ -24,11 +24,13 @@ const MicButton = ({ onRecordingComplete, disabled }) => {
         onClick={handleClick}
         className={styles.button}
       >
-        <img className={styles.icon} src="images/mic.svg"/>
+        {isRecording ? (
+          <img className={styles.icon} src="images/circle.svg" />
+        ) : (
+          <img className={styles.icon} src="images/mic.svg" />
+        )}
       </button>
-      <span>
-        {isRecording ? "Press to stop recording" : "Press to start recording"}
-      </span>
+      <span>{isRecording ? "Recording..." : "Press to start recording"}</span>
     </span>
   );
 };
